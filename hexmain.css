@@ -5,6 +5,11 @@ body {
 
 }
 
+img {
+	width: 512px;
+	height: 512px;
+}
+
 #out { 
     width:4350px;
     height: 880px;

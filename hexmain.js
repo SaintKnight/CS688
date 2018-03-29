@@ -55,6 +55,15 @@ function(){
     $("#mintro").click({param1:"#m"},movetoright);
     $("#nintro").click({param1:"#n"},movetoright);
     $("#ointro").click({param1:"#o"},movetoright);
+
+    $(".big").okzoom({
+  width: 200,
+  height: 200,
+  round: true,
+  background: "#000",
+  shadow: "0 0 5px #000",
+  border: "1px solid black"
+});
 });
 
 function loop(){
