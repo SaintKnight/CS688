@@ -1,0 +1,24 @@
+Compilation:
+        Use default premake4/make combination. No other changes.
+        Run in the default directory such that: /cs488/A4/
+        Lab computer used to complete the assignment:gl41
+
+Manual:
+	Note all additional sample images are stored in the dir: ./A4/Assets/image/ which contains 3 folders:
+		(i) draw_bounding_box: contains images with bounding box explicitly drawn -- nonhier-bb.png, macho-cows-bb.png, hier-bb.png
+		(ii) with_supersampling: contains the images of all sample scripts including sample.lua with supersampling turned ON
+		(ii) without_supersampling: contains the images of all sample scripts including sample.lua with supersampling turned OFF
+		
+	(1) one additional feature: supersampling, sample on a 3x3 grid for each px and average 9 color values (default is ON. To turn off, set variable SUPPER_SAMPLE at line 12 in A4.hpp to 0)
+	(2) using boxes as bound volumes: see nonhier-bb.png, macho-cows-bb.png and hier-bb.png
+	(3) output every 10% of process completed.
+	
+	sample.png (512x512):
+	(a) support spheres, cubes, triangle meshes
+		spheres example: pen,penring,plant
+		cubes example: books, papers
+		meshes example: pots, cow, inkneck
+	(b) two light sources: white(far behind) and orange(near at the middle of the table)
+	(c) shiny surfaces example: pen, cow
+	(d) non-trivial background: sunset -- blue to pink (parameterized by pixel position)
+	(e) supersampling follows (1) mentioned above: obviously seen by comparing two sample.pngs in folders with_supersampling and without_supersampling respectively

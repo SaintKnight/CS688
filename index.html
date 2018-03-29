@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta author = "Yue Zhu">
+		<title>HEX</title>
+		<link type="text/css" rel="stylesheet" href="./hexmain.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script type="text/javascript" src="./hexmain.js"></script>
+	</head>
+	<body>
+	    <div id = "out" class = "csshover">
+	    	<div id = "a" class = "chara" ></div>
+	    	<div id = "b" class = "chara" ></div>
+	    	<div id = "c" class = "chara" ></div>
+	    	<div id = "d" class = "chara" ></div>
+	    	<div id = "e" class = "chara" ></div>
+	    	<div id = "f" class = "chara" ></div>
+	    	<div id = "g" class = "chara" ></div>
+	    	<!-- extra -->
+	    	<div id = "h" class = "chara" ></div>
+	    	<div id = "i" class = "chara" ></div>
+	    	<div id = "j" class = "chara" ></div>
+	    	<div id = "k" class = "chara" ></div>
+	    	<div id = "l" class = "chara" ></div>
+	    	<div id = "m" class = "chara" ></div>
+	    	<div id = "n" class = "chara" ></div>
+	    	<div id = "o" class = "chara" ></div>
+
+	    	<div id = "left" class = "side"></div>
+	    	<div id = "right" class = "side"></div>
+	    	<div id = "only"></div>
+	    	<div id = "aintro" class = "intro">
+	    		<h1>Primitives -- Cylinder, Cone</h1>
+	    		<p id="p1"></p>
+				
+				<p id="p2"></p>
+				<p id="p1">A cylinder and a cone</p>
+				<img src = "./final/primitives/simplefinalprimitives.png">
+				<p id="p2">An hourglass</p>
+				<img src = "./final/primitives/finalprimitives.png">
+				<p id="p1">A glossy hourglass (np = 100)</p>
+				<img src = "./final/primitives/glossyhg.png">
+	    	</div>
+
+	    	<div id = "bintro" class = "intro">
+	    		<h1>CSG</h1>
+	    		<p id="p1"></p>
+				<p id="p2"></p>
+				<p id="p1">Take the union, intersection and differece of a cube and a sphere.</p>
+				<img src = "./final/csg/simplefinalcsg.png">
+				<p id="p2">Three gears. Each of them is a csg.</p>
+				<img src = "./final/csg/finalcsg.png">
+				<p id="p2">Three glossy gears (not submit this one).</p>
+				<img src = "./final/csg/glossycsg.png">
+	    	</div>
+
+	    	<div id = "cintro" class = "intro">
+	    		<h1>Reflection</h1>
+	    		<p id="p1"></p>
+				<p id="p2"></p>
+				<p id="p1">Two mirrors reflect each other with a green ball in the middle.</p>
+				<img src = "./final/reflect/simplefinalreflection.png">
+				<p id="p2">A mirror reflects Van Gogh's sunflowers which sits at the back of the room.</p>
+				<img src = "./final/reflect/finalreflection.png">
+				<p id="p1">A mirror reflects part of an hourglass with adaptive anti-aliasing</p>
+				<img src = "./final/reflect/mirrorwithAA.png">
+	    	</div>
+
+	    	<div id = "dintro" class = "intro">
+	    		<h1>Refraction</h1>
+	    		<p id="p1"></p>
+				<p id="p2"></p>
+				<p id="p1">A magnifier refracts sunflowers (n = 1.00)</p>
+				<img src = "./final/refract/finalrefraction1.0.png">
+				<p id="p2">A magnifier refracts sunflowers (n = 1.02)</p>
+				<img src = "./final/refract/finalrefraction1.02.png">
+				<p id="p1">A magnifier refracts sunflowers (n = 1.05)</p>
+				<img src = "./final/refract/finalrefraction1.05.png">
+				<p id="p2">A magnifier refracts sunflowers (n = 1.50)</p>
+				<img src = "./final/refract/finalrefraction1.50.png">
+				<p id="p1">A magnifier refracts sunflowers (n = 2.00)</p>
+				<img src = "./final/refract/finalrefraction2.0.png">
+	    	</div>
+
+	    	<div id = "eintro" class = "intro">
+	    		<h1>Texture</h1>
+	    		<p id="p1"></p>
+				<p id="p2"></p>
+				<p id="p1">Texture mapping applies to three books, the map, the front part of the pen, and the body of the ink bottle.</p>
+				<img src = "./final/texture/finaltexture512.png">
+	    	</div>
+
+	    	<div id = "fintro" class = "intro">
+	    		<h1>Bump Mapping</h1>
+	    		<p id="p1"></p>
+				<p id="p2"></p>
+				<p id="p1">Bump mapping applies to the Earth.</p>
+				<p id="p2">Light sits at the right.</p>
+				<img src = "./final/bump/finalbump1.png">
+				<p id="p2">Light sits at the left.</p>
+				<img src = "./final/bump/finalbump3.png">
+	    	</div>
+
+	    	<div id = "gintro" class = "intro">
+	    		<h1>Motion Blur</h1>
+	    		<p id="p1"></p>
+				<p id="p2"></p>
+				<p id="p1">Motion blur is applied on the stamp. In each time interval, make 40 steps and average the color. (distance=1, each step=0.025)</p>
+				<img src = "./final/motion/finalmotion512.png">
+	    	</div>
+	    	<!-- extra -->
+	    	<div id = "hintro" class = "intro">
+	    		<h1>Soft Shadow</h1>
+	    		<p id="p1"></p>
+				<p id="p2"></p>
+				<p id="p1">Sample 1 shadow ray in total</p>
+				<img src = "./final/softshadow/softshadowsample=1.png">
+				<p id="p2">Sample 5 shadow rays in total</p>
+				<img src = "./final/softshadow/softshadowsample=5.png">
+				<p id="p1">Sample 10 shadow rays in total</p>
+				<img src = "./final/softshadow/softshadowsample=10.png">
+				<p id="p2">Sample 20 shadow rays in total</p>
+				<img src = "./final/softshadow/softshadowsample=20.png">
+	    	</div>
+	    	<div id = "iintro" class = "intro">
+	    		<h1>Adaptive Anti-aliasing</h1>
+	    		<p id="p1"></p>
+				<p id="p2"></p>
+				<p id="p1">Use the idea of warnock's algorithm.</p>
+				<p id="p2">Recursion depth=1 (with red edge detection).</p>
+				<img src = "./final/AA/finalAAdepth=1.png">
+				<p id="p2">Recursion depth=2 (with red edge detection).</p>
+				<img src = "./final/AA/finalAAdepth=2.png">
+				<p id="p2">Recursion depth=2.</p>
+				<img src = "./final/AA/withAAdepth=2.png">
+				<p id="p2">No anti-aliasing.</p>
+				<img src = "./final/AA/noAA.png">
+	    	</div>
+	    	<div id = "jintro" class = "intro">
+	    		<h1>Final Scene</h1>
+	    		<p id="p1"></p>
+				<p id="p2"></p>
+				<img src = "./final/finalscene.png">
+	    	</div>
+	    	<div id = "kintro" class = "intro">
+	    		<h1>Glosy Reflection (Extra)</h1>
+	    		<p id="p1"></p>
+				<p id="p2"></p>
+				<p id="p1">Glossy reflection with np = 10</p>
+				<img src = "./final/glossy reflection (extra)/glossyref10.png">
+				<p id="p2">Glossy reflection with np = 100</p>
+				<img src = "./final/glossy reflection (extra)/glossyref100.png">
+				<p id="p1">Glossy reflection with np = 1,000</p>
+				<img src = "./final/glossy reflection (extra)/glossyref1000.png">
+				<p id="p2">Glossy reflection with np = 10,000</p>
+				<img src = "./final/glossy reflection (extra)/glossyref10000.png">
+				<p id="p1">Glossy reflection with np = 1,000,000</p>
+				<img src = "./final/glossy reflection (extra)/glossyref1000000.png">
+				<p id="p2">A glossy hourglass</p>
+				<img src = "./final/glossy reflection (extra)/glossyhg.png">
+				<p id="p1">3 glossy gears</p>
+				<img src = "./final/glossy reflection (extra)/glossycsg.png">
+	    	</div>
+	    	<div id = "lintro" class = "intro">
+	    		<h1>Glossy Refraction (Extra)</h1>
+	    		<p id="p1"></p>
+				<p id="p2"></p>
+				<p id="p1">Glossy transmission (np = 100)</p>
+				<img src = "./final/glossy transmission (extra)/glossytrans100.png">
+				<p id="p2">Glossy transmission (np = 10,000)</p>
+				<img src = "./final/glossy transmission (extra)/glossytransm10000.png">
+				<p id="p1">Transparent</p>
+				<img src = "./final/glossy transmission (extra)/transp.png">
+	    	</div>
+	    	<div id = "mintro" class = "intro">
+	    		<h1>Depth of Field (extra)</h1>
+	    		<p id="p1"></p>
+				<p id="p2"></p>
+				<p id="p1">Depth = 34 (objz = -15, eyez = 20) </p>
+				<img src = "./final/dof (extra)/doffar.png">
+				<p id="p2">Depth = 24 (objz = -5, eyez = 20)</p>
+				<img src = "./final/dof (extra)/dofmid.png">
+				<p id="p1">Depth = 14 (objz = 5, eyez = 20)</p>
+				<img src = "./final/dof (extra)/dofnear.png">
+	    	</div>
+	    	<div id = "nintro" class = "intro">
+	    		<h1>Animation</h1>
+	    		<p id="p1"></p>
+				<p id="p2"></p>
+				<p id="p1">50fps animation</p>
+				<img src = "./final/anime (extra)/anime.gif">
+	    	</div>
+	    	<div id = "ointro" class = "intro">
+	    		<h1>Multithreading</h1>
+	    		<p id="p1"></p>
+				<p id="p2"></p>
+				<p id="p1">32 threads for lab computer.</p>
+				<p id="p1">8 threads for personal computer.</p>
+				<p id="p1">scene -- time using multitread vs time without using multithread</p>
+				<p id="p2">Glossy hourglass -- 13m46 vs 49m21 (improvment:3.58 times faster)</p>
+				<p id="p2">Glossy transmission -- 4m vs 14m52 (improvment:3.72 times faster)</p>
+				<p id="p2">Glossy reflection -- 6m36 vs 24m55 (improvment:3.78 times faster)</p>
+				<p id="p2">Animation/frame -- 49s2 vs 5m56 (improvment:7.26 times faster)</p>
+				<p id="p2">Animation/allframes -- 10m45 vs 83m31 (improvment:7.77 times faster)</p>
+	    	</div>
+	    </div>
+	</body>
+</html>

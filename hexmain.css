@@ -1,0 +1,334 @@
+body {
+    background-color:black;   
+    margin-top: 0px; 
+    margin-bottom: 0px;
+
+}
+
+#out { 
+    width:4350px;
+    height: 880px;
+    display:auto;
+    background-color:black;
+    margin-top: -20px;
+    margin-bottom: 0px;
+}
+
+#only {
+	z-index: 1;
+	position: absolute;
+	width: 400px;
+	height:880px;
+	/*float:left;*/
+	margin-top: 0px;
+	margin-left: -40px;
+	margin-bottom: 0px;
+	-webkit-transform: rotate(7deg);
+}
+
+.intro {
+	z-index: 1;
+	top:0;
+	margin-right: 150px;
+	margin-top: 150px;
+	bottom: 0;
+	float: right;
+	background-color: black;
+	position: relative;
+	width:700px;
+	height: 730px;
+}
+
+h1 {
+	color: red;
+	line-height: 200%;
+	font-family: cursive;
+	font-size: 48px;
+}
+
+p {
+	color: white;
+	line-height: 200%;
+	font-family: "Comic Sans MS";
+	font-size: 20px;
+}
+
+#p1{
+	color: #808080;
+}
+.width400 {
+	width: 400px;
+}
+
+.width260 {
+	width: 260px;
+}
+.chara {
+	display:inline-block;
+	height:100%;
+	float:left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	-webkit-transition: width 0.5s, background 0.5s;
+	-webkit-transform: rotate(7deg);
+}
+
+#out.csshover .chara:hover{
+    width:400px;
+    -webkit-transform: rotate(7deg);
+}
+
+#a {
+	margin-left: 60px;
+	border-right: 10px solid #FF6600;
+}
+
+#out.csshover #a:hover {
+	margin-left: 60px;
+	border-right: 10px solid #FF6600;
+	background: url("./images/maincol/finalprimitives.png") 50% 50%/auto 100%;
+}
+
+#b {
+	border-right: 10px solid #FF6600;
+}
+
+#out.csshover #b:hover {
+	border-right: 10px solid #FF6600;
+	background: url("./images/maincol/finalcsg.png") 50% 50%/auto 100%;
+}
+
+#c {
+	border-right: 10px solid #FF6600;
+}
+
+#out.csshover #c:hover {
+	border-right: 10px solid #FF6600;
+	background: url("./images/maincol/finalreflection.png") 50% 50%/auto 100%;
+}
+
+#d {
+	border-right: 10px solid #FF6600;
+}
+
+#out.csshover #d:hover {
+	border-right: 10px solid #FF6600;
+	background: url("./images/maincol/finalrefraction1.02.png") 50% 50%/auto 100%;
+}
+
+#e {
+	border-right: 10px solid #FF6600;
+}
+
+#out.csshover #e:hover {
+	border-right: 10px solid #FF6600;
+	background: url("./images/maincol/finaltexture512.png") 50% 50%/auto 100%;
+}
+
+#f {
+	border-right: 10px solid #FF6600;
+}
+
+#out.csshover #f:hover {
+	border-right: 10px solid #FF6600;
+	background: url("./images/maincol/finalbump1.png") 50% 50%/auto 100%;
+}
+
+#g {
+	border-right: 10px solid #FF6600;
+}
+
+#out.csshover #g:hover {
+	border-right: 10px solid #FF6600;
+	background: url("./images/maincol/finalmotion512.png") 50% 50%/auto 100%;
+}
+
+/*extra start*/
+#h {
+	border-right: 10px solid #FF6600;
+}
+
+#out.csshover #h:hover {
+	border-right: 10px solid #FF6600;
+	background: url("./images/maincol/softshadowsample=20.png") 50% 50%/auto 100%;
+}
+#i {
+	border-right: 10px solid #FF6600;
+}
+
+#out.csshover #i:hover {
+	border-right: 10px solid #FF6600;
+	background: url("./images/maincol/finalAAdepth=1.png") 50% 50%/auto 100%;
+}
+#j {
+	border-right: 10px solid #FF6600;
+}
+
+#out.csshover #j:hover {
+	border-right: 10px solid #FF6600;
+	background: url("./images/maincol/finalscene.png") 50% 50%/auto 100%;
+}
+#k {
+	border-right: 10px solid #FF6600;
+}
+
+#out.csshover #k:hover {
+	border-right: 10px solid #FF6600;
+	background: url("./images/maincol/glossyref100.png") 50% 50%/auto 100%;
+}
+#l {
+	border-right: 10px solid #FF6600;
+}
+
+#out.csshover #l:hover {
+	border-right: 10px solid #FF6600;
+	background: url("./images/maincol/glossytrans100.png") 50% 50%/auto 100%;
+}
+#m {
+	border-right: 10px solid #FF6600;
+}
+
+#out.csshover #m:hover {
+	border-right: 10px solid #FF6600;
+	background: url("./images/maincol/dofmid.png") 50% 50%/auto 100%;
+}
+#n {
+	border-right: 10px solid #FF6600;
+}
+
+#out.csshover #n:hover {
+	border-right: 10px solid #FF6600;
+	background: url("./images/maincol/anime.png") 50% 50%/auto 100%;
+}
+#o {
+	border-right: 10px solid #FF6600;
+}
+
+#out.csshover #o:hover {
+	border-right: 10px solid #FF6600;
+	background: url("./images/maincol/multithread.png") 50% 50%/auto 100%;
+}
+/*extra end*/
+
+.side {
+	opacity: 0;
+	z-index: 1;
+	top:0;
+	position: fixed;
+	width:20px;
+	height:100%;
+	background:black;
+	-webkit-transition: opacity 0.5s;
+}
+
+#out.csshover .side:hover {
+	opacity: 0.5;
+}
+
+#left {
+	left:0;
+}
+
+#right {
+	right:0;
+}
+
+
+/*css*/
+
+.aurl{
+	background: url("./images/maincol/finalprimitives.png") 50% 50%/auto 100%;
+}
+.burl{
+	background: url("./images/maincol/finalcsg.png") 50% 50%/auto 100%;
+}
+.curl{
+	background: url("./images/maincol/finalreflection.png") 50% 50%/auto 100% ;
+}
+.durl{
+	background: url("./images/maincol/finalrefraction1.02.png") 50% 50%/auto 100%;
+}
+.eurl{
+	background: url("./images/maincol/finaltexture512.png") 50% 50%/auto 100%;
+}
+.furl{
+	background: url("./images/maincol/finalbump1.png") 50% 50%/auto 100% ;
+}
+.gurl{
+	background: url("./images/maincol/finalmotion512.png") 50% 50%/auto 100% ;
+}
+/*extra start*/
+.hurl{
+	background: url("./images/maincol/softshadowsample=20.png") 50% 50%/auto 100% ;
+}
+.iurl{
+	background: url("./images/maincol/finalAAdepth=1.png") 50% 50%/auto 100% ;
+}
+.jurl{
+	background: url("./images/maincol/finalscene.png") 50% 50%/auto 100% ;
+}
+.kurl{
+	background: url("./images/maincol/glossyref100.png") 50% 50%/auto 100% ;
+}
+.lurl{
+	background: url("./images/maincol/glossytrans100.png") 50% 50%/auto 100% ;
+}
+.murl{
+	background: url("./images/maincol/dofmid.png") 50% 50%/auto 100% ;
+}
+.nurl{
+	background: url("./images/maincol/anime.png") 50% 50%/auto 100% ;
+}
+.ourl{
+	background: url("./images/maincol/multithread.png") 50% 50%/auto 100% ;
+}
+
+/*extra end*/
+
+.aurl1{
+	background: url("./images/mainbk/finalprimitives.png") 50% 50%/auto 100%;
+}
+.burl1{
+	background: url("./images/mainbk/finalcsg.png") 50% 50%/auto 100%;
+}
+.curl1{
+	background: url("./images/mainbk/finalreflection.png") 50% 50%/auto 100% ;
+}
+.durl1{
+	background: url("./images/mainbk/finalrefraction1.02.png") 50% 50%/auto 100%;
+}
+.eurl1{
+	background: url("./images/mainbk/finaltexture512.png") 50% 50%/auto 100%;
+}
+.furl1{
+	background: url("./images/mainbk/finalbump1.png") 50% 50%/auto 100% ;
+}
+.gurl1{
+	background: url("./images/mainbk/finalmotion512.png") 50% 50%/auto 100% ;
+}
+/*extra start*/
+.hurl1{
+	background: url("./images/mainbk/softshadowsample=20.png") 50% 50%/auto 100% ;
+}
+.iurl1{
+	background: url("./images/mainbk/finalAAdepth=1.png") 50% 50%/auto 100% ;
+}
+.jurl1{
+	background: url("./images/mainbk/finalscene.png") 50% 50%/auto 100% ;
+}
+.kurl1{
+	background: url("./images/mainbk/glossyref100.png") 50% 50%/auto 100% ;
+}
+.lurl1{
+	background: url("./images/mainbk/glossytrans100.png") 50% 50%/auto 100% ;
+}
+.murl1{
+	background: url("./images/mainbk/dofmid.png") 50% 50%/auto 100% ;
+}
+.nurl1{
+	background: url("./images/mainbk/anime.png") 50% 50%/auto 100% ;
+}
+.ourl1{
+	background: url("./images/mainbk/multithread.png") 50% 50%/auto 100% ;
+}
+/*extra end*/
