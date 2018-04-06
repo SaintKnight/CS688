@@ -39,22 +39,22 @@ function(){
     $("#n").click({param1:"#n"},movetoleft);
     $("#o").click({param1:"#o"},movetoleft);
 
-    $("#aintro").click({param1:"#a"},movetoright);
-    $("#bintro").click({param1:"#b"},movetoright);
-    $("#cintro").click({param1:"#c"},movetoright);
-    $("#dintro").click({param1:"#d"},movetoright);
-    $("#eintro").click({param1:"#e"},movetoright);
-    $("#fintro").click({param1:"#f"},movetoright);
-    $("#gintro").click({param1:"#g"},movetoright);
+    $("#aintro").click({param1:"#a",param2:"#aintro"},movetoright);
+    $("#bintro").click({param1:"#b",param2:"#bintro"},movetoright);
+    $("#cintro").click({param1:"#c",param2:"#cintro"},movetoright);
+    $("#dintro").click({param1:"#d",param2:"#dintro"},movetoright);
+    $("#eintro").click({param1:"#e",param2:"#eintro"},movetoright);
+    $("#fintro").click({param1:"#f",param2:"#fintro"},movetoright);
+    $("#gintro").click({param1:"#g",param2:"#gintro"},movetoright);
     //extra
-    $("#hintro").click({param1:"#h"},movetoright);
-    $("#iintro").click({param1:"#i"},movetoright);
-    $("#jintro").click({param1:"#j"},movetoright);
-    $("#kintro").click({param1:"#k"},movetoright);
-    $("#lintro").click({param1:"#l"},movetoright);
-    $("#mintro").click({param1:"#m"},movetoright);
-    $("#nintro").click({param1:"#n"},movetoright);
-    $("#ointro").click({param1:"#o"},movetoright);
+    $("#hintro").click({param1:"#h",param2:"#hintro"},movetoright);
+    $("#iintro").click({param1:"#i",param2:"#iintro"},movetoright);
+    $("#jintro").click({param1:"#j",param2:"#jintro"},movetoright);
+    $("#kintro").click({param1:"#k",param2:"#kintro"},movetoright);
+    $("#lintro").click({param1:"#l",param2:"#lintro"},movetoright);
+    $("#mintro").click({param1:"#m",param2:"#mintro"},movetoright);
+    $("#nintro").click({param1:"#n",param2:"#nintro"},movetoright);
+    $("#ointro").click({param1:"#o",param2:"#ointro"},movetoright);
 
     $(".big").okzoom({
   width: 200,
@@ -75,6 +75,8 @@ function stop(){
 }
 
 function movetoright(x){
+	var vv = x.data.param2;
+	$(vv).off("click");
 	var v = x.data.param1;
 	$(".intro").fadeOut(1000);
 	setTimeout( function(){$("#out").css("width","4350px");},1001);
@@ -89,8 +91,7 @@ function movetoright(x){
 	turnonclick();
 	$("#out").addClass('csshover');
 	$(v).addClass("fade");
-
-
+	setTimeout( function(){$(vv).click({param1:v,param2:vv},movetoright);}, 2010)
 }
 
 function turnonclick(){
